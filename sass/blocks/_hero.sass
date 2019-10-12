@@ -1,5 +1,15 @@
 .hero
-	background: #f1f1f1 url('../img/hero/hero-bg.jpg') no-repeat center
-	background-size: cover
+	background: #f1f1f1 url('../img/hero/hero-bg.jpg') no-repeat center top 80px
+	background-size: contain
 	padding-top: 120px
 	padding-bottom: 270px
+	&__title
+		font-size: 30px
+		margin-bottom: 40px
+		margin-top: 60px
+	&__subtitle
+		display: block
+		font-size: 30px
+		+bold
+		margin-bottom: 67px
+	

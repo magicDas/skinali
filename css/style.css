@@ -39,6 +39,23 @@ body {
   text-transform: uppercase;
 }
 
+.button {
+  border: none;
+  text-transform: uppercase;
+  padding: 25px 45px;
+  background-color: #507fe1;
+  color: #ffffff;
+  font-family: 'Proxima Nova Semibold',	sans-serif;
+}
+
+.navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #ffffff;
+}
+
 .navbar-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -117,9 +134,22 @@ body {
 }
 
 .hero {
-  background: #f1f1f1 url("../img/hero/hero-bg.jpg") no-repeat center;
-  background-size: cover;
+  background: #f1f1f1 url("../img/hero/hero-bg.jpg") no-repeat center top 80px;
+  background-size: contain;
   padding-top: 120px;
   padding-bottom: 270px;
+}
+
+.hero__title {
+  font-size: 30px;
+  margin-bottom: 40px;
+  margin-top: 60px;
+}
+
+.hero__subtitle {
+  display: block;
+  font-size: 30px;
+  font-family: 'Proxima Nova Semibold',	sans-serif;
+  margin-bottom: 67px;
 }
 /*# sourceMappingURL=style.css.map */
