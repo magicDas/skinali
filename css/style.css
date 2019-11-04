@@ -50,9 +50,9 @@ body {
 
 .button-o {
   background-color: transparent;
-  border: 2px solid #507fe1;
+  border: 2px solid #507f;
   padding: 17px 22px;
-  color: #507fe1;
+  color: #507f;
   font-size: 12px;
   font-family: 'Proxima Nova Semibold',	sans-serif;
   background-color: #ffffff;
@@ -64,15 +64,53 @@ body {
   border: none;
   text-transform: uppercase;
   padding: 25px 45px;
-  background-color: #507fe1;
+  background-color: #507f;
   color: #ffffff;
   font-family: 'Proxima Nova Semibold',	sans-serif;
   cursor: pointer;
 }
 
+.bg-secondary {
+  background: #f1f1f1;
+}
+
+.input {
+  height: 80px;
+  padding: 0;
+  padding-left: 30px;
+  max-width: 270px;
+  border: 1px solid #dddddd;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked + label:before {
+  background-color: green;
+}
+
+.checkbox-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 40px;
+}
+
+.checkbox-label:before {
+  content: '';
+  width: 30px;
+  height: 30px;
+  border: 1px solid #dddddd;
+  margin-right: 20px;
+}
+
 @media (max-width: 576px) {
   .button-o {
-    font-size: 12px;
+    font-size: 10px;
   }
 }
 
@@ -123,7 +161,7 @@ body {
   left: 0;
   top: 80px;
   padding: 16px 0;
-  background-color: #507fe1;
+  background-color: #507f;
   color: #ffffff;
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -255,5 +293,67 @@ body {
     background-size: 100%;
     background-position: top right;
   }
+}
+
+.offer {
+  padding: 129px 0;
+}
+
+.offer-block {
+  background-color: #ffffff;
+  padding: 80px;
+}
+
+.offer__title {
+  font-size: 25px;
+  text-transform: uppercase;
+  font-family: 'Proxima Nova Semibold',	sans-serif;
+  margin-bottom: 20px;
+}
+
+.offer__subtitle {
+  display: block;
+  font-size: 21px;
+  margin-bottom: 48px;
+}
+
+.form__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 900px;
+  margin-bottom: 25px;
+}
+
+.form__row:last-child {
+  margin-bottom: 0;
+}
+
+.form__label {
+  display: block;
+  font-size: 17px;
+  margin-bottom: 15px;
+}
+
+.form__group {
+  -ms-flex-preferred-size: 33.33%;
+      flex-basis: 33.33%;
+}
+
+.form__input {
+  width: 100%;
+  border-right-width: 0px;
+}
+
+.form__input:last-child {
+  border-right-width: 1px;
+}
+
+.form__button {
+  height: 82px;
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
