@@ -40,7 +40,7 @@
             <a class="navbar__phone" href="tel:+380960486461">+38 096 048-64-61</a>
             <span class="navbar__work-time navbar__small-text">без выходных 9-19</span>
           </div>
-           <!-- /.navbar__mobile -->        
+          <!-- /.navbar__mobile -->        
           <div class="navbar__landline">
             <a class="navbar__phone" href="tel:+380960486461">+38 096 048-64-61</a>
             <a class="navbar__email navbar__small-text" href="mailto:magicdas@i.ua">magicdas@i.ua</a>
@@ -114,15 +114,68 @@
         </div>
       </div>
     </section>
+
+    <section class="splash">
+      <div id="splash">
+        <div>
+          <ul class='kwicks kwicks-horizontal'>   
+            <li>
+              <a href="#">
+                <h4>
+                  <nobr>Сухой лед</nobr>
+                </h4>
+                <img src="http://cryogen.com.ua/wp-content/uploads/vert_dry.jpg">
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <h4><nobr>Поставки газов</nobr></h4>
+                <img src="http://cryogen.com.ua/wp-content/uploads/vert_gas.jpg"/>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <h4><nobr>Криогенное оборудование</nobr></h4>
+                <img src="http://cryogen.com.ua/wp-content/uploads/vert_eq.jpg"/>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <h4><nobr>Медицинское газообеспечение</nobr></h4>
+                <img src="http://cryogen.com.ua/wp-content/uploads/vert_med.jpg" />
+              </a>
+            </li>
+          </ul>        		
+
+        </div>
+      </div>
+    </section>
   </main>
 
 
 
-<!--Подключение виджета обратной связи через соцсети-->
-<script type="text/javascript" src="https://spikmi.com/Widget?Id=1912"></script>
+  <!--Подключение виджета обратной связи через соцсети-->
+  <script type="text/javascript" src="https://spikmi.com/Widget?Id=1912"></script>
 
-<script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> -->
-<script src="js/main.js"></script>
+  <script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> -->
+  <script src="js/easing.js"></script>
+  <script src="js/kwicks.js"></script>  
+  <script src="js/main.js"></script>
+  <script>
+    $(function () {
+      $('.kwicks').kwicks({
+        size: 225,
+        minSize: 100,
+        spacing: 3,
+        duration: 1000,
+        behavior: 'menu',
+        easing: 'easeOutBack'
+      });
+    });
+  </script>
 </body>
 </html>

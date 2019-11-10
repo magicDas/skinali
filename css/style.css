@@ -87,7 +87,7 @@ input[type="checkbox"] {
 }
 
 input[type="checkbox"]:checked + label:before {
-  background-color: green;
+  background-color: #507f;
 }
 
 .checkbox-label {
@@ -100,12 +100,67 @@ input[type="checkbox"]:checked + label:before {
   margin-right: 40px;
 }
 
+.checkbox-label:hover {
+  cursor: pointer;
+}
+
 .checkbox-label:before {
   content: '';
   width: 30px;
   height: 30px;
   border: 1px solid #dddddd;
   margin-right: 20px;
+}
+
+.splash {
+  background: url("../img/splash/var9.png") center top no-repeat;
+  background-size: cover;
+}
+
+.splash #splash .kwicks {
+  display: block;
+  list-style-type: none;
+  list-style: none;
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 32px;
+  padding-bottom: 40px;
+}
+
+.splash #splash .kwicks > li {
+  width: 600px;
+  height: 470px;
+  margin-left: 5px;
+  float: left;
+}
+
+.splash #splash .kwicks > li a {
+  text-decoration: none;
+}
+
+.splash #splash .kwicks > * {
+  display: block;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+.splash #splash .kwicks.kwicks-processed > * {
+  margin: 0;
+  position: absolute;
+}
+
+.splash #splash .kwicks-horizontal > * {
+  float: left;
+}
+
+.splash #splash .kwicks-horizontal > :first-child {
+  margin-left: 0;
+}
+
+.splash #splash .kwicks-vertical > :first-child {
+  margin-top: 0;
 }
 
 @media (max-width: 576px) {
@@ -300,8 +355,12 @@ input[type="checkbox"]:checked + label:before {
 }
 
 .offer-block {
-  background-color: #ffffff;
+  background: #ffffff url("../img/offer/form-bg.jpg") no-repeat center right;
+  background-size: contain;
+  -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
   padding: 80px;
+  margin-top: -200px;
 }
 
 .offer__title {
@@ -355,5 +414,45 @@ input[type="checkbox"]:checked + label:before {
 .form__button {
   height: 82px;
   width: 100%;
+}
+
+@media (max-width: 1199px) {
+  .offer-block {
+    background-position: center right -120px;
+  }
+}
+
+@media (max-width: 768px) {
+  .offer-block {
+    background: none;
+    background-color: #ffffff;
+    padding: 40px;
+  }
+  .offer__title {
+    font-size: 18px;
+  }
+  .offer__subtitle {
+    font-size: 16px;
+  }
+  .form__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .form__row-checkbox {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .form__group {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    width: 100%;
+  }
+  .form__input {
+    margin-bottom: 20px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

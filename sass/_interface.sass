@@ -30,7 +30,7 @@ body
 input[type="checkbox"]
 	display: none	
 	&:checked + label:before
-		background-color: $primery
+		background-color: $primary
 .checkbox		
 	&-label
 		display: flex
@@ -44,6 +44,40 @@ input[type="checkbox"]
 			height: 30px
 			border: 1px solid #dddddd
 			margin-right: 20px
+.splash
+	background: url('../img/splash/var9.png') center top no-repeat
+	background-size: cover
+	#splash						
+		.kwicks 
+			display: block
+			list-style-type: none
+			list-style: none
+			position: relative
+			margin: 0 auto
+			padding: 0	
+			padding-top: 32px	
+			padding-bottom: 40px
+		.kwicks	> li
+				width: 600px
+				height: 470px
+				margin-left: 5px
+				float: left
+				a
+					text-decoration: none
+		.kwicks	> * 
+				display: block
+				overflow: hidden
+				padding: 0
+				margin: 0
+		.kwicks.kwicks-processed > *
+			margin: 0
+			position: absolute
+		.kwicks-horizontal > *
+			float: left
+		.kwicks-horizontal > :first-child
+			margin-left: 0
+		.kwicks-vertical > :first-child 
+			margin-top: 0						
 @media (max-width: 576px)
 	.button-o
 		font-size: 10px	
